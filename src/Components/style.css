@@ -1,0 +1,60 @@
+
+#sibebar-nav {
+    background-color : rgb(37,52,74);
+    height: 100vh;
+    padding:0px;
+}
+
+.navbar-menu-item {
+    font-display:white !important;
+    
+}
+
+#wrapper {
+    
+    padding: 0px;
+    height:100vh;
+}
+
+
+.toolbar {
+    background-color:rgb(238,238,238);
+    border-bottom: 1px solid gray;
+    height : 13vh;
+
+}
+
+.dashboard {
+    background-color: rgb(238,238,238);
+    height:87vh;
+    overflow-y: scroll
+}
+
+#dashboard-row {
+    margin-left: 0px;
+}
+
+.sidebar-toggle {
+    background-color: rgb(238,238,238);
+    border-bottom: 1px solid gray;
+    height : 13vh;
+}
+
+.sidebar-menu-item {
+    color:white;
+    
+}
+.xxx  {
+    background-color: rgb(37,52,74);;
+}
+
+
+
+/*#33b768*/
+.nav-stacked .navbar-nav > li > a:hover {
+    background-color: orange;
+  }
+  
+  .yyy  {
+    background-color:orange
+}
