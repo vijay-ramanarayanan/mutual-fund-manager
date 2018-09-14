@@ -5,9 +5,9 @@
     padding:0px;
 }
 
-.navbar-menu-item {
-    font-display:white !important;
-    
+#vijay > li > a:hover {
+    background-color: rgb(37,52,90,0.9);
+
 }
 
 #wrapper {
@@ -41,20 +41,21 @@
 }
 
 .sidebar-menu-item {
-    color:white;
+    color:#18e618;
     
 }
-.xxx  {
+.sidebar-menu-button {
     background-color: rgb(37,52,74);;
 }
-
-
-
-/*#33b768*/
-.nav-stacked .navbar-nav > li > a:hover {
-    background-color: orange;
-  }
   
-  .yyy  {
-    background-color:orange
+.yyy  {
+    background-color: orangered;
+}
+
+.sidebar-menu-header {
+    margin-bottom: 2%;
+}
+
+.sidebar-menu-header-item {
+    color:orangered;
 }
