@@ -10,6 +10,13 @@
 
 }
 
+#vijay > li > a:focus {
+    background-color: #18e68a;
+
+}
+
+
+
 #wrapper {
     
     padding: 0px;
@@ -41,12 +48,17 @@
 }
 
 .sidebar-menu-item {
-    color:#18e618;
-    
+    color:#e618dc;
+    font-size:17px;
 }
 .sidebar-menu-button {
-    background-color: rgb(37,52,74);;
+    background-color: rgb(37,52,74);
 }
+
+.sidebar-menu-button-selected {
+    background-color: #18e68a;
+}
+
   
 .yyy  {
     background-color: orangered;

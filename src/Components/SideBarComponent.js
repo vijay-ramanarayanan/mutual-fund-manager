@@ -12,22 +12,23 @@ export default class SideBarComponent extends Component {
         );
     }
 
-    renderMenuItem(menuItem, key) {
+    renderMenuItem(menuItem) {
+        let className = menuItem.key === this.props.activeKey ? "sidebar-menu-button-selected" : "sidebar-menu-button";
         return(
-            <NavItem  className ="sidebar-menu-button" key={key + 1} eventKey={key + 1} href="#">
-                <p className ="sidebar-menu-item">{menuItem}</p>
+            <NavItem  className ={className} key={menuItem.key} eventKey={menuItem.key} href="#">
+                <p className ="sidebar-menu-item">{menuItem.name}</p>
             </NavItem>
         );
       }
 
     render() {
-        const menuItems =this.props.menu.map((value, index)=>{
-            return this.renderMenuItem(value, index)
+        const menuItems =this.props.menu.map((value)=>{
+            return this.renderMenuItem(value)
         });
 
         return(
             <div id="sibebar-nav" className="col-sm-2 col-xs-4">
-                <Nav  bsStyle="pills" stacked id="vijay"  onSelect={this.props.onSelect} activeKey ={this.props.activeKey}>
+                <Nav  bsStyle="pills" stacked id="vijay"  onSelect={this.props.onSelect} >
                     {this.renderMenuHeader(this.props.menuHeader)}
                     {menuItems}
                 </Nav>
