@@ -6,7 +6,7 @@ export default class SideBarComponent extends Component {
 
     renderMenuHeader(menuItem) {
         return(
-            <NavItem  className ="sidebar-menu-header" eventKey={menuItem} href="/home" disabled>
+            <NavItem  className ="sidebar-menu-header" eventKey={menuItem} href="#" disabled>
                 <h4 className ="sidebar-menu-header-item">{menuItem}</h4>
             </NavItem>
         );
@@ -14,7 +14,7 @@ export default class SideBarComponent extends Component {
 
     renderMenuItem(menuItem, key) {
         return(
-            <NavItem  className ="sidebar-menu-button" key={key + 1} eventKey={key + 1} href="/home">
+            <NavItem  className ="sidebar-menu-button" key={key + 1} eventKey={key + 1} href="#">
                 <p className ="sidebar-menu-item">{menuItem}</p>
             </NavItem>
         );
@@ -27,7 +27,7 @@ export default class SideBarComponent extends Component {
 
         return(
             <div id="sibebar-nav" className="col-sm-2 col-xs-4">
-                <Nav  bsStyle="pills" stacked id="vijay"  onSelect={this.props.onSelect} >
+                <Nav  bsStyle="pills" stacked id="vijay"  onSelect={this.props.onSelect} activeKey ={this.props.activeKey}>
                     {this.renderMenuHeader(this.props.menuHeader)}
                     {menuItems}
                 </Nav>

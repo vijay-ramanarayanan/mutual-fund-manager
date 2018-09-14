@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import {Provider} from 'react-redux';
+
 import SideBar from './Containers/SideBarContainer';
 import MainContent from './Containers/MainContentContainer';
+import store from './Store/store'
 
 class App extends Component {
   constructor() {
@@ -24,4 +27,10 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(
+
+    <Provider store = {store}>
+        <App />
+    </Provider>, document.getElementById('root')
+
+);

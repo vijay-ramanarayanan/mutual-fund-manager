@@ -1,19 +1,23 @@
 import React, {Component} from 'react';
 import SideBarComponent from '../Components/SideBarComponent';
+import sideBarActions from '../Actions/SideBarActions';
 
-export default class SideBar extends Component {
+import {connect} from 'react-redux';
 
-    handleSelect(selectedKey) {
-       /* this.setState({
-                activeKey : selectedKey
-        });*/
-        alert(selectedKey);
-      }
+class SideBar extends Component {
 
     render() {
         let items = ["Option1", "Option2", "Option3", "Option4", "Option5"]
         return(
-            <SideBarComponent menu = {items} onSelect = {this.handleSelect} menuHeader = "Investments" />
+            <SideBarComponent menu = {items} onSelect = {this.props.changeActiveMenuOption} menuHeader = "Investments" activeKey = {this.props.activeView}/>
         )
     }
 }
+
+const mapStateToProps = ({sideBar}) => ({...sideBar});
+
+const mapDispatchToProps = (dispatch) => ({
+    changeActiveMenuOption : (selectedKey) => dispatch(sideBarActions.changeActiveOption(selectedKey))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideBar)
