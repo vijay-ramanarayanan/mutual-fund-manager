@@ -6,7 +6,7 @@ export default class MainContent extends Component {
     render() {
         return(
 
-            <div   id="wrapper" className="col-sm-10 col-xs-8 ">
+            <div   id="wrapper" className="col-sm-9 col-xs-8 ">
                 <ToolBar/>
                 <Dashboard/>
             </div>

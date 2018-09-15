@@ -1,20 +1,59 @@
+/*
+
+    CSS Style for SideBar
+
+*/
+
+
+h3 { font-size: 5.17em; margin: .83em 0 }
+
 
 #sibebar-nav {
     background-color : rgb(37,52,74);
     height: 100vh;
     padding:0px;
+    overflow-x: scroll;
 }
 
-#vijay > li > a:hover {
+
+.sidebar-menu-item {
+    color:white;
+    font-size:17px;
+}
+.sidebar-menu-button {
+    background-color: rgb(37,52,74);
+}
+
+.sidebar-menu-header {
+
+    background-color:rgb(37,52,74);
+    height:13vh;
+}
+
+.sidebar-menu-header-item {
+    color:orangered;
+    font-size:3vw
+}
+
+#sidebar-mutual-fund-nav >.active>a {
+    background-color: green;
+}
+
+#sidebar-mutual-fund-nav >li:not(.active)>a:focus{
+    background-color:rgb(37,52,74);
+}
+
+
+#sidebar-mutual-fund-nav > li:not(.active)> a:hover
+{
     background-color: rgb(37,52,90,0.9);
 
 }
 
-#vijay > li > a:focus {
-    background-color: #18e68a;
 
-}
-
+/*
+    Other CSS Components
+*/
 
 
 #wrapper {
@@ -26,7 +65,7 @@
 
 .toolbar {
     background-color:rgb(238,238,238);
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid green;
     height : 13vh;
 
 }
@@ -41,33 +80,12 @@
     margin-left: 0px;
 }
 
-.sidebar-toggle {
-    background-color: rgb(238,238,238);
-    border-bottom: 1px solid gray;
-    height : 13vh;
+.mutual_fund_cover {
+    width : 100%;
+    height : 50%;
 }
 
-.sidebar-menu-item {
-    color:#e618dc;
-    font-size:17px;
-}
-.sidebar-menu-button {
-    background-color: rgb(37,52,74);
-}
 
-.sidebar-menu-button-selected {
-    background-color: #18e68a;
-}
 
-  
-.yyy  {
-    background-color: orangered;
-}
 
-.sidebar-menu-header {
-    margin-bottom: 2%;
-}
 
-.sidebar-menu-header-item {
-    color:orangered;
-}

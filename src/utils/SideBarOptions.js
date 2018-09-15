@@ -1,5 +1,10 @@
 export const sidebarMenu  = () => ([
     {
+        name: "Our Reccomendation",
+        key : "Top10"
+    },
+
+    {
         name :"Axis Bank",
         key : "Axis"
     }, 

@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
 
 const initialState = {
-    activeView : 1
+    activeView : 'Top10'
 }
 
 const changeActiveItem = (state, action) => {

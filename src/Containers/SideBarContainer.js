@@ -9,7 +9,7 @@ class SideBar extends Component {
 
     render() {
         return(
-            <SideBarComponent menu = {sidebarMenu()} onSelect = {this.props.changeActiveMenuOption} menuHeader = "Investments" activeKey = {this.props.activeView}/>
+            <SideBarComponent menu = {sidebarMenu()} onSelect = {this.props.changeActiveMenuOption} menuHeader = "" activeKey = {this.props.activeView}/>
         )
     }
 }

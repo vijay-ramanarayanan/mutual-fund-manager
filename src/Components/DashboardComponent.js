@@ -7,6 +7,7 @@ export default class Dashboard extends Component {
         return(                    
             <div id="dashboard-row" className="row">
                 <div className="dashboard">
+
                     <div>Hi</div>
                 </div>
             </div>
