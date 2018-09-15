@@ -1,4 +1,4 @@
-Setting Up the Project 
+**Setting Up the Project**
 
 Ensure the following softwares are installed  : git, yarn , node 
 
@@ -29,3 +29,9 @@ Now run the app locally :
 Type `yarn start`
 
 The app will open automatically in your Browser .
+
+
+**Updating the Project**
+
+To make sure you are having the latest version of project in your local typr
+`git pull`
