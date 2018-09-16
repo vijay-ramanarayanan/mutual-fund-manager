@@ -19,6 +19,7 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 .sidebar-menu-item {
     color:white;
     font-size:17px;
+   display: inline-block;
 }
 .sidebar-menu-button {
     background-color: rgb(37,52,74);
@@ -86,6 +87,10 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 }
 
 
-
+.sidebar-icons {
+    height: 15%;
+    margin-right: 5%;
+    width:9%;
+}
 
 
