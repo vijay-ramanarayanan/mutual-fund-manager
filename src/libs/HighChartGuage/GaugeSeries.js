@@ -41,12 +41,8 @@ const GraphRender = ({ data }) => {
         backgroundColor: '#FCFFC5',
         height : "40%",
         borderRadius: 20,
-        borderWidth: 2,    
-        title: {
-          text: 'Title aligned left',
-          align: 'left',
-          x: 70
-      },
+        borderWidth: 2, 
+   
     
       }}
         plotOptions={plotOptions}
@@ -62,10 +58,6 @@ const GraphRender = ({ data }) => {
           minorTickInterval={null}
           tickInterval={5/256}
           tickAmount={2}
-          title={{
-            y: -90,
-          text : "Our Rating"
-          }}
           labels={{ y: 16 }}
 
           stops={[

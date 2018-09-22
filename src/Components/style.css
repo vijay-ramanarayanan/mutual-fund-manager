@@ -148,9 +148,6 @@ h3 { font-size: 5.17em; margin: .83em 0 }
     padding-top: 5%;
 }
 
-.forecast-router {
-
-}
 
 .mutual-fund-container {
 }
@@ -159,4 +156,36 @@ h3 { font-size: 5.17em; margin: .83em 0 }
     width:60%;
     margin-left: 10%;
     margin-top : 5%;
+}
+
+.rating-text {
+    margin-left: 15%;
+    padding-top : 3%;
+    font-family: Plume;
+    color : green;
+
+}
+
+.mutual-fund-header-div {
+    margin-top:3%;
+    background-color: rgb(227 ,236 ,218);
+    padding-bottom: 2%;
+}
+
+.overview-text {
+    float:left;
+    vertical-align: bottom;
+    margin-top:3%;
+    padding-top: 1%;
+    margin-left: 20%;
+
+}
+
+.forecast-router {
+
+    margin-left: 2%;
+    margin-top : 3%;
+    background-color : green;
+    border-radius: 10px;
+    padding: 1%;
 }
