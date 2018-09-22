@@ -7,7 +7,7 @@ export default class MainContent extends Component {
         return(
 
             <div   id="wrapper" className="col-lg-9 col-md-8 col-sm-8 col-xs-8 ">
-                <ToolBar/>
+                {<ToolBar/>}
                 <Dashboard/>
             </div>
        );

@@ -6,14 +6,12 @@ import Nav from '../Containers/NavContainer';
 export default class MutualFundOverViewComponent extends Component {
     render() {
         return(
-                <div>
-                <Nav/>
-                <div className="mutual-fund-rater ">                
+                <div className="mutual-fund-container">
+                <button className="forecast-router" onClick = {this.props.handleClick}>Click here for forecasts</button>
+                {<Nav/>}
+                <div className="">                
                     <RatingMeter/>
                 <div>
-                        <b>
-                            Our Rating
-                        </b>
                     </div>
                 </div>
                 </div>
