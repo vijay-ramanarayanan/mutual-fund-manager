@@ -72,8 +72,9 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 }
 
 .dashboard {
-    height:87vh;
-    overflow-y: scroll
+    overflow-y: scroll;
+    background-color:rgb(238,238,238);
+
 }
 
 #dashboard-row {
@@ -101,13 +102,24 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 }
 
 .mutual-fund-nav-value {
-    background-color: rgb(57 , 66, 78);
-    width: 60%;
-    margin-left: 10%;
-    margin-top: 5%;
+    background-color: #C0C0C0;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    margin-top: 3%;
     border-radius: 25px;
     position: relative;
-    padding-bottom: 5%
+    padding-bottom: 5%;
+    float : left;
+    border: 2px solid rgb(51, 92, 173);
+}
+
+.rater-guage {
+    display: inline-block;
+    margin-top: 1%;
+
+
 }
 
 .nav-description {
@@ -153,21 +165,22 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 }
 
 #rating-meter {
-    width:60%;
-    margin-left: 10%;
-    margin-top : 5%;
+    width:42%;
+    margin-left: 5%;
+    margin-top : 2%;
+    margin-bottom : 5%;
+    display:inline-block;
 }
 
 .rating-text {
     margin-left: 15%;
-    padding-top : 3%;
+    padding-top : 1%;
     font-family: Plume;
     color : green;
 
 }
 
 .mutual-fund-header-div {
-    margin-top:3%;
     background-color: rgb(227 ,236 ,218);
     padding-bottom: 2%;
 }
@@ -175,7 +188,6 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 .overview-text {
     float:left;
     vertical-align: bottom;
-    margin-top:3%;
     padding-top: 1%;
     margin-left: 20%;
 
@@ -184,8 +196,9 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 .forecast-router {
 
     margin-left: 2%;
-    margin-top : 3%;
+    margin-top : 2%;
     background-color : green;
     border-radius: 10px;
     padding: 1%;
 }
+

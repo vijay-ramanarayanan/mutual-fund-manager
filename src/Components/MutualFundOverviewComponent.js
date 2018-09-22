@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import RatingMeter from '../Containers/RatingMeterContainer';
 import './style.css';
 import Nav from '../Containers/NavContainer';
+import RatingGuage from '../libs/GoogleGuageChart/guage';
 
 export default class MutualFundOverViewComponent extends Component {
     render() {
@@ -14,9 +14,10 @@ export default class MutualFundOverViewComponent extends Component {
 
                 {<Nav/>}
 
-                <h1 className="rating-text">Our Rating</h1>
-                <div>                
-                    <RatingMeter/>
+              {/*}  <h1 className="rating-text">Our Rating</h1>*/}
+                <div className = "rater-guage">                
+                    <RatingGuage/>
+                    {/*<RatingMeter/>*/}
                 <div>
                     </div>
                 </div>
