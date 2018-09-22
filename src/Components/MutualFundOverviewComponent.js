@@ -9,7 +9,7 @@ export default class MutualFundOverViewComponent extends Component {
                 <div className="mutual-fund-container">
                 <button className="forecast-router" onClick = {this.props.handleClick}>Click here for forecasts</button>
                 {<Nav/>}
-                <div className="">                
+                <div>                
                     <RatingMeter/>
                 <div>
                     </div>

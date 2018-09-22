@@ -1,11 +1,12 @@
 import React from "react";
 import Highcharts from "highcharts";
+import './rater.css';
 import {
   HighchartsChart,
   withHighcharts,
   Series,
   XAxis,
-  YAxis
+  YAxis,
 } from "react-jsx-highcharts";
 
 const plotOptions = {
@@ -19,8 +20,8 @@ const plotOptions = {
 };
 
 const paneOptions = {
-  center: ["50%", "45%"],
-  size: "80%",
+  center: ["50%", "75%"],
+  size: "100%",
   startAngle: -90,
   endAngle: 90,
   background: {
@@ -28,16 +29,26 @@ const paneOptions = {
       (Highcharts.theme && Highcharts.theme.background2) || "#EEE",
     innerRadius: "60%",
     outerRadius: "100%",
-    shape: "arc"
-  }
+    shape: "arc",
+}
 };
 
 const GraphRender = ({ data }) => {
   return (
     <div className="gauge-empty">
-      <div className="no-data">Our Rating</div>
       <HighchartsChart
-        chart={{ type: "solidgauge" }}
+        chart={{ type: "solidgauge",
+        backgroundColor: '#FCFFC5',
+        height : "40%",
+        borderRadius: 20,
+        borderWidth: 2,    
+        title: {
+          text: 'Title aligned left',
+          align: 'left',
+          x: 70
+      },
+    
+      }}
         plotOptions={plotOptions}
         pane={paneOptions}
       >
@@ -52,7 +63,8 @@ const GraphRender = ({ data }) => {
           tickInterval={5/256}
           tickAmount={2}
           title={{
-            y: -70
+            y: -90,
+          text : "Our Rating"
           }}
           labels={{ y: 16 }}
 
@@ -66,6 +78,7 @@ const GraphRender = ({ data }) => {
             name="gauge-test"
             data={[4]}
             type="solidgauge"
+            title= "title"
           />
 
 
