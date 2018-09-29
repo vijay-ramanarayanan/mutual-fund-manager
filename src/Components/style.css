@@ -202,3 +202,17 @@ h3 { font-size: 5.17em; margin: .83em 0 }
     padding: 1%;
 }
 
+#mutual-fund-table {
+    margin : 2%;
+    border: 10px solid green;
+    background-color: rgb(211,211,211);
+    
+}
+
+.mutual-fund-overview-toolbar {
+    height : 90px;
+    background-color: rgb(227,236,219);
+}
+
+
+

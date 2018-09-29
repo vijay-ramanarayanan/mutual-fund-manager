@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SideBarComponent from '../Components/SideBarComponent';
-import sideBarActions from '../Actions/SideBarActions';
+import actions from '../Actions/SideBarActions';
 import {sidebarMenu} from '../utils/SideBarOptions'
 
 import {connect} from 'react-redux';
@@ -14,10 +14,12 @@ class SideBar extends Component {
     }
 }
 
-const mapStateToProps = ({sideBar}) => ({...sideBar});
+//const mapStateToProps = ({mutualFunds}) => (mutualFunds.activeView);
+const mapStateToProps = ({mutualFunds}) => ({activeView: mutualFunds.activeView})
+
 
 const mapDispatchToProps = (dispatch) => ({
-    changeActiveMenuOption : (selectedKey) => dispatch(sideBarActions.changeActiveOption(selectedKey))
+    changeActiveMenuOption : (selectedKey) => dispatch(actions.changeActiveOption(selectedKey))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SideBar)

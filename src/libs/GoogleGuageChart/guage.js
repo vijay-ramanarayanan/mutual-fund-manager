@@ -11,11 +11,15 @@ const options = {
   greenTo: 10,
   max:10,
   width:400,
-  height:250
-
+  height:250,
+  animation  : {
+    duration : 1000,
+    easing : 'linear'
+  }
 };
 
 export default class RatingGuage extends React.Component {
+    
   intervalID = null;
   getData = () => {
     return [

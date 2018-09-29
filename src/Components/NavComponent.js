@@ -10,8 +10,6 @@ export default class NavComponent extends Component {
                 <p className = "nav-value">{x}</p> 
                 <p className="glyphicon glyphicon-triangle-top nav-increase"></p>
                 <p className="nav-increase-value">{0.02}</p>
-
-
             </div>
         )
     }

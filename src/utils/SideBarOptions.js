@@ -31,7 +31,7 @@ export const sidebarMenu  = () => ([
     }, 
     {
         name: "Aditya Birla",
-        key: "Aditya Birla",
+        key: "AdityaBirla",
         icon: adityaIcon
     },
     {

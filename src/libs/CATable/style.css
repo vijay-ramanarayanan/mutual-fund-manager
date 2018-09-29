@@ -1,0 +1,33 @@
+.App {
+    margin: 1%;
+}
+
+.table {
+    margin-bottom:0rem;
+    margin-right: 0rem;
+}
+
+
+.table > thead > tr > th {
+    border: 1px solid green;
+    color:green;
+    background-color: rgb(227,236 ,218);
+
+}
+
+.table > tbody > tr > td {
+    border: 1px solid gray;
+
+}
+
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color:rgb(102, 102, 102, 0.6);
+  }
+  
+  tr {
+    line-height: 25px;
+    min-height: 25px;
+    height: 70px;
+ }
+ 
