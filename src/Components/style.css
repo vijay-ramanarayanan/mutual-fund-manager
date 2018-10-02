@@ -214,7 +214,7 @@
 
 .xxx {
     margin-top : 5%;
-    margin-left : 5%;
+    margin-left : 2%;
     margin-right : 5%;
     float: left;
 }
@@ -222,7 +222,8 @@
 @media (max-width: 1200px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .xxx {
-        width : 90%
+        width : 90%;
+        margin-left: 10%;
     }
 
     .overview-text {
@@ -250,6 +251,10 @@
         margin-left : 25%;
     }
 
+    .mutal-fund-time-series {
+        margin-left: 10%;
+    }
+
 
   }
 
@@ -264,7 +269,7 @@
 
   .mutal-fund-time-series {
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-right: 5%;
     width :760px;
     height : 360px;
