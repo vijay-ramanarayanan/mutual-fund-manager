@@ -10,8 +10,8 @@ const options = {
   greenFrom : 6,
   greenTo: 10,
   max:10,
-  width:400,
-  height:250,
+  width:200,
+  height:200,
   animation  : {
     duration : 1000,
     easing : 'linear'
