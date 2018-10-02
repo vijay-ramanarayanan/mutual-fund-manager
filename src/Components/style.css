@@ -5,7 +5,6 @@
 */
 
 
-h3 { font-size: 5.17em; margin: .83em 0 }
 
 
 #sibebar-nav {
@@ -117,7 +116,7 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 
 .rater-guage {
     display: inline-block;
-    margin-top: 1%;
+    margin-top: 4%;
 
 
 }
@@ -127,34 +126,36 @@ h3 { font-size: 5.17em; margin: .83em 0 }
     font-family: Plume;
     margin-left: 10%;
     margin-right: 5%;
-    padding-top: 7%;
+    padding-top: 2%;
     font-size: 3vw;
-    float:left;
+    display: inline;
 }
 
 .nav-value {
     color : green;
-    padding-top: 7%;
+    margin-top: 2%;
     font-weight: bold;
     font-size: 3vw;
+    display: inline-block;
 
 }
 
 .nav-increase {
     color: green;
-    font-size: 2vw;
-    margin-left:30%;
-    float:left;
-    position: absolute;
+    font-size: 3vw;
+    margin-left: 25%;
+    margin-right: 5%;
+    display: inline;
+
 }
 
 .nav-increase-value {
-    color : green;
-    display: inline;
-    margin-left: 4%;
-    font-size:2vw;
+    color: green;
+    display: inline-block;
+    margin-top: 1.5%;
+    font-size: 2vw;
     font-weight: bold;
-}
+    vertical-align: top;}
 
 .nav-value-container {
     padding-top: 5%;
@@ -182,14 +183,14 @@ h3 { font-size: 5.17em; margin: .83em 0 }
 
 .mutual-fund-header-div {
     background-color: rgb(227 ,236 ,218);
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 }
 
 .overview-text {
     float:left;
     vertical-align: bottom;
     padding-top: 1%;
-    margin-left: 20%;
+    margin-left: 25%;
 
 }
 
@@ -214,5 +215,47 @@ h3 { font-size: 5.17em; margin: .83em 0 }
     background-color: rgb(227,236,219);
 }
 
+.xxx {
+    margin-top : 5%;
+    margin-left : 5%;
+    margin-right : 5%;
+    float: left;
+}
 
+@media (max-width: 1200px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .xxx {
+        width : 90%
+    }
 
+    .overview-text {
+        margin-left: 10%;
+    }
+
+    .nav-description {
+        font-size: 5.5vw;
+
+    }
+
+    .nav-value {
+        font-size: 5.5vw;
+    }
+    .nav-increase  {
+        font-size: 5.5vw;
+    }
+
+    .nav-increase-value {
+        font-size: 5.5vw;
+        margin-top: 0%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .xxx {
+        width : 50%
+    }
+
+  }
+
+  

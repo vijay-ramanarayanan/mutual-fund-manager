@@ -8,7 +8,7 @@ export default class MutualFundOverViewComponent extends Component {
         return(
                 <div className="mutual-fund-container">
                 <div className ="mutual-fund-header-div">
-                <h3 className="overview-text">Mutual Fund Overview </h3>
+                <h2 className="overview-text">Mutual Fund Overview </h2>
                 <button className="forecast-router" onClick = {this.props.handleClick}>Click here for forecasts</button>
                 </div>
 

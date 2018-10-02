@@ -1,16 +1,24 @@
 import React, {Component} from 'react';
-import './style.css'
-export default class NavComponent extends Component {
-    render() {
+import {Panel} from 'react-bootstrap';
 
-        const x = 39.25; // FETCH IT FROM SERVICE
+export default class CAPanel extends Component {
+    render() {
         return(
-            <div className = "mutual-fund-nav-value">
-                <p className = "nav-description">Current Nav :</p> 
-                <p className = "nav-value">{x}</p> 
-                <p className="glyphicon glyphicon-triangle-top nav-increase"></p>
-                <p className="nav-increase-value">{0.02}</p>
+            <div className="xxx">
+                <Panel>
+                    <Panel.Heading>
+                        <Panel.Title componentClass="h3">Nav Summary</Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Body>
+                        <div className="nav-description"> Current Nav :</div>
+                        <div className="nav-value">39.25</div>
+                    </Panel.Body>
+                    <Panel.Body>
+                        <div className="glyphicon glyphicon-triangle-top nav-increase"></div>
+                        <div className="nav-increase-value">0.03</div>
+                    </Panel.Body>
+                </Panel>
             </div>
-        )
+        );
     }
 }

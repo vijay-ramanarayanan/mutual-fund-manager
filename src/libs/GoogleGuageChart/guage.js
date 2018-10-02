@@ -32,11 +32,8 @@ export default class RatingGuage extends React.Component {
     return (
         <Chart
           chartType="Gauge"
-          width="100%"
-          height="100%"
           data={this.getData()}
           options={options}
-          disaplay = "inherit"
         />
     );
   }
