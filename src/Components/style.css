@@ -4,12 +4,9 @@
 
 */
 
-
-
-
 #sibebar-nav {
     background-color : rgb(37,52,74);
-    height: 100vh;
+    height: 115vh;
     padding:0px;
     overflow-x: scroll;
 }
@@ -248,7 +245,14 @@
         font-size: 5.5vw;
         margin-top: 0%;
     }
+
+    .rater-guage {
+        margin-left : 25%;
+    }
+
+
   }
+
 
   @media (min-width: 1200px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
@@ -258,4 +262,12 @@
 
   }
 
+  .mutal-fund-time-series {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width :760px;
+    height : 360px;
+    background-color: white;
   
+}

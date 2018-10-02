@@ -28,11 +28,11 @@ export default class SideBarComponent extends Component {
         });
 
         return(
-            <div id="sibebar-nav" className="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                <Nav  bsStyle="pills" stacked id="sidebar-mutual-fund-nav"  onSelect={this.props.onSelect} activeKey = {this.props.activeKey}>
+            <div id="sibebar-nav" className="col-lg-3 col-md-4 col-sm-4 col-xs-4 fixed">
+            <Nav  bsStyle="pills" stacked id="sidebar-mutual-fund-nav"  onSelect={this.props.onSelect} activeKey = {this.props.activeKey}>
                     {this.renderMenuHeader(this.props.menuHeader)}
                     {menuItems}
-                </Nav>
+            </Nav>
             </div>
         )
       }    

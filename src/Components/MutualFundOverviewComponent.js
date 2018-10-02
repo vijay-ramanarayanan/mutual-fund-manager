@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './style.css';
 import Nav from '../Containers/NavContainer';
 import RatingGuage from '../libs/GoogleGuageChart/guage';
+import TimeSeries from '../libs/TimeSeriesChart/TimeSeries'
 
 export default class MutualFundOverViewComponent extends Component {
     render() {
@@ -13,13 +14,12 @@ export default class MutualFundOverViewComponent extends Component {
                 </div>
 
                 {<Nav/>}
-
-              {/*}  <h1 className="rating-text">Our Rating</h1>*/}
                 <div className = "rater-guage">                
                     <RatingGuage/>
-                    {/*<RatingMeter/>*/}
-                <div>
-                    </div>
+                </div>
+                <div className = "mutal-fund-time-series">
+                <TimeSeries/>
+
                 </div>
                 </div>
         )}
