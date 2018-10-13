@@ -28,9 +28,20 @@ const selectedMutualFund = (state, action) => {
     });
 }
 
+const forecastView = (state, action) => {
+    return({
+        ...state,
+        showMutualFundOverView : false,
+        showForeCastView : true,
+        showMutualFundsSummary : false,
+        activeFund : action.data
+    })
+}
+
 const handler = {
     ['ACTIVE_MENU_ITEM_CHANGED'] : changeActiveItem,
-    ['MUTUAL_FUND_SELECTED_FROM_TABLE'] : selectedMutualFund
+    ['MUTUAL_FUND_SELECTED_FROM_TABLE'] : selectedMutualFund,
+    ['MUTUAL_FUND_FORECAST_CLICKED'] : forecastView
 }
 
 const mutualFunds = (state = initialState, action ={}) => (handler[action.type] ? handler[action.type](state, action) : state)

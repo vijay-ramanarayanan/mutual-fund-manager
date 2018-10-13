@@ -5,22 +5,34 @@ import RatingGuage from '../libs/GoogleGuageChart/guage';
 import TimeSeries from '../libs/TimeSeriesChart/TimeSeries'
 
 export default class MutualFundOverViewComponent extends Component {
-    render() {
+
+    renderForecastView() {
         return(
-                <div className="mutual-fund-container">
-                <div className ="mutual-fund-header-div">
-                <h2 className="overview-text">Mutual Fund Overview </h2>
-                <button className="forecast-router" onClick = {this.props.handleClick}>Click here for forecasts</button>
+            <div>
+                Forecasts to be Added
+            </div>
+        );
+    }
+
+    renderSummaryView() {
+        return(
+            <div className="mutual-fund-container">
+                <div className="mutual-fund-header-div">
+                    <h2 className="overview-text">Mutual Fund Overview </h2>
+                    <button className="forecast-router" onClick={this.props.onForecastClick}>Click here for forecasts</button>
                 </div>
 
-                {<Nav/>}
-                <div className = "rater-guage">                
-                    <RatingGuage/>
+                {<Nav />}
+                <div className="rater-guage">
+                    <RatingGuage />
                 </div>
-                <div className = "mutal-fund-time-series">
-                <TimeSeries/>
-
+                <div className="mutal-fund-time-series">
+                    <TimeSeries />
                 </div>
-                </div>
+            </div>
         )}
+
+    render() {
+        return(this.props.showForecast ? this.renderForecastView() : this.renderSummaryView());
+    }
 }

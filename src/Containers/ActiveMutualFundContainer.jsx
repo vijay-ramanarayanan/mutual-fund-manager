@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import ActiveMutualFund from '../Components/ActiveMutualFundComponent';
-import changeSelectedMutualFund from '../Actions/SideBarActions';
+import actions from '../Actions/SideBarActions';
 import MutualFunds from '../utils/MutualFunds';
 
 
@@ -35,6 +35,7 @@ class MutualFundDetails extends Component {
     render() {
         return(<ActiveMutualFund columns = {this.mutualFunds.getColumns()} 
                                  rows = {this.mutualFundTable()}
+                                onClick = {this.props.showSelectedFund}
         />);
     }
 }
@@ -45,7 +46,7 @@ const mapStateToProps = ({mutualFunds}) => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    showSelectedFund : (selectedFund) => dispatch(changeSelectedMutualFund(selectedFund))
+    showSelectedFund : (selectedFund) => dispatch(actions.displaySelectedFundOverview(selectedFund))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MutualFundDetails)

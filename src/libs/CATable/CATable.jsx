@@ -5,14 +5,14 @@ import './style.css';
 export default class CATable extends Component {
 
     renderRow(row) {
-        return row.map(rowdata => <td>{rowdata}</td>);
+        return row.map((rowdata, index) => <td key = {index}>{rowdata}</td>);
     }
 
     renderHeader(columns) {
         return (
             <thead>
                 <tr>
-                    {columns.map(column => <th>{column}</th>)}
+                    {columns.map(column => <th key={column}>{column}</th>)}
                 </tr>
             </thead>
         )
@@ -21,7 +21,7 @@ export default class CATable extends Component {
     renderRows(rows) {
         return(
             <tbody>
-                {rows.map(row => <tr>{this.renderRow(row)}</tr>)}
+                {rows.map((row, index) => <tr  className="vija" key = {index} onClick = {(index) => this.props.onClick(row[0])}>{this.renderRow(row)}</tr>)}
             </tbody>);
     }
 
